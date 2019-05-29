@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="20sp">
+
+    <Button
+        android:id="@+id/btn_obtain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="家庭智能空间信息采集"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+        <TextView
+            android:id="@+id/tv_param"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="参数："
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_param1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_param"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/txt_rectborder"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="数据："
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_data1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_data"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@drawable/txt_rectborder"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+        <TextView
+            android:id="@+id/tv_phyparam"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="生理参数："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_phyparam1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_phyparam"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/txt_rectborder"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+        <TextView
+            android:id="@+id/tv_phydata"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="生理数据："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_phydata1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_phydata"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@drawable/txt_rectborder"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_servicelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="服务列表"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15sp"
+        android:background="@color/blue"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+        <TextView
+            android:id="@+id/tv_food"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="食物："
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_food1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_food"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:background="@drawable/txt_rectborder"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_revisefood"
+            android:text="修正"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tv_food1"
+            android:layout_marginStart="30dp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_revisefood"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_revisefood"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@drawable/txt_rectborder"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+        <TextView
+            android:id="@+id/tv_ac"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="空调："
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_acnum"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_ac"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@drawable/txt_rectborder"/>
+
+        <TextView
+            android:id="@+id/tv_ac1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_acnum"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/txt_rectborder"/>
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_reviseac"
+            android:text="修正"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tv_ac1"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_reviseac"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_reviseac"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:background="@drawable/txt_rectborder"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+        <TextView
+            android:id="@+id/tv_light"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="灯具："
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_lightnum"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_light"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@drawable/txt_rectborder"/>
+
+        <TextView
+            android:id="@+id/tv_light1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_lightnum"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/txt_rectborder"/>
+
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_reviselight"
+            android:text="修正"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tv_light1"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_reviselight"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_reviselight"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:background="@drawable/txt_rectborder"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清除智能空间信息"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>
